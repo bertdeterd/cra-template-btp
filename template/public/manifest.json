@@ -1,4 +1,9 @@
 {
+  "_version": "1.9.0",
+  "sap.cloud": {
+    "public": true,
+    "service": "net.org.myapp"
+  },
   "sap.app": {
     "id":"<%= appid %>",
     "applicationVersion":{
