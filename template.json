@@ -2,6 +2,10 @@
   "package": {
     "homepage": "./",
     "dependencies": {
+      "@ui5/webcomponents": "latest",
+      "@ui5/webcomponents-fiori": "latest",
+      "@ui5/webcomponents-icons": "latest",
+      "@ui5/webcomponents-react": "latest",
       "@testing-library/jest-dom": "^5.11.4",
       "@testing-library/react": "^11.1.0",
       "@testing-library/user-event": "^12.1.10",
