@@ -10,12 +10,13 @@
       "@testing-library/react": "^11.1.0",
       "@testing-library/user-event": "^12.1.10",
       "web-vitals": "^1.0.1",
-      "bestzip": "latest"
+      "bestzip": "latest",
+      "react-router-dom": "latest"
     },
     "scripts": {
       "serve": "serve -s build",
-      "predeploy": "npm run build",
-      "deploy": "cf html5-push ./build",
+      "predeploy:manual": "npm run build",
+      "deploy:manual": "cf html5-push ./build",
       "zip": "cd build && bestzip ../../../mta_resources/webapp-content.zip *"
     },
     "eslintConfig": {
