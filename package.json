@@ -7,6 +7,9 @@
     "template"
   ],
   "description": "The base template for Create React App for SAP BTP",
+  "scripts": {
+    "prepublish": "npm version patch"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bertdeterd/cra-template-btp.git",
