@@ -8,7 +8,7 @@
   ],
   "description": "The base template for Create React App for SAP BTP",
   "scripts": {
-    "prepublish": "npm version patch"
+    "prepublishOnly": "npm version patch"
   },
   "repository": {
     "type": "git",
