@@ -16,13 +16,14 @@ import {
 } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import Home from './Home'
+import logo from '../assets/sap-logo-svg.svg'
 
 const App = () => {
   const { t } = useTranslation();
   return (
 
     <ThemeProvider>
-      <ShellBar primaryTitle={t('title')} />
+      <ShellBar logo={<img src={logo} alt="App Logo" />} primaryTitle={t('title')} />
       <FlexBox
         style={{ width: '100%', height: '100vh' }}
         direction={FlexBoxDirection.Column}
