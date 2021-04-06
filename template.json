@@ -12,6 +12,7 @@
       "bestzip": "latest",
       "react-router-dom": "latest",
       "react-i18next": "latest",
+      "http-proxy-middleware": "latest",
       "i18next-browser-languagedetector": "latest",
       "i18next-http-backend": "latest"
     },
