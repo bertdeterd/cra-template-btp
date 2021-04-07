@@ -1,4 +1,4 @@
-import { AppContext } from '../store/appstore'
+import { AppContext, Actions } from '../store/appstore'
 import { useContext } from 'react'
 
 const useStartup = () => {
@@ -8,9 +8,9 @@ const useStartup = () => {
             const fetchData = { method: 'GET', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' } }
             const response = await fetch(`api${process.env.REACT_APP_SAP_BC_UI2_STARTUP_URI}`, fetchData)
             const jsonresponse = await response.json()
-            dispatch({ type: 'SET_USER', payload: jsonresponse })
+            dispatch({ type: Actions.SET_USER, payload: jsonresponse })
         } catch (e) {
-            throw new Error(`Call failed`)
+            throw new Error(`Call failed. Is service activated in SICF?`)
         }
     }
     return { readUser }

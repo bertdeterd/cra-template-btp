@@ -1,15 +1,14 @@
 import { Link, LinkDesign } from '@ui5/webcomponents-react';
-
 import React, { useContext, useEffect } from 'react'
 import { AppContext } from '../store/appstore'
 import useStartup from '../api/useStartup'
 
 const Home = () => {
   const [state, dispatch] = useContext(AppContext)
-  const { getUser } = useStartup()
+  const { readUser } = useStartup()
   
   useEffect( () => {
-    getUser()
+    readUser()
   }, [])
 
   return (
