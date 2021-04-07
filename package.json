@@ -2,7 +2,7 @@
   "name": "cra-template-btp",
   "version": "0.0.18",
   "keywords": [
-    "react",
+    "react", "sap", "mta", "btp", "ui5",
     "create-react-app",
     "template"
   ],
