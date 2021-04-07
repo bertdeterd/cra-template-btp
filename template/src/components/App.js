@@ -27,23 +27,23 @@ const App = () => {
   return (
 
     <ThemeProvider>
-        <Appstore>
-      <ShellBar logo={<img src={logo} alt="App Logo" />} primaryTitle={t('title')} />
-      <FlexBox
-        style={{ width: '100%', height: '100vh' }}
-        direction={FlexBoxDirection.Column}
-        justifyContent={FlexBoxJustifyContent.Center}
-        alignItems={FlexBoxAlignItems.Center} >
+      <Appstore>
+        <ShellBar logo={<img src={logo} alt="App Logo" />} primaryTitle={t('title')} />
+        <FlexBox
+          style={{ width: '100%', height: '100vh' }}
+          direction={FlexBoxDirection.Column}
+          justifyContent={FlexBoxJustifyContent.Center}
+          alignItems={FlexBoxAlignItems.Center} >
 
-        <Router>
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </Router>
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </Router>
 
-      </FlexBox>
+        </FlexBox>
       </Appstore>
     </ThemeProvider>
 
