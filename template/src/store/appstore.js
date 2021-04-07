@@ -1,17 +1,14 @@
 import React, { createContext, useReducer } from 'react'
 
 const initialState = {
-    "leverancierstablecolumns": [{ label: 'test' }, { label: 'product' }],
-    "leveranciers": []
+    "user": {}
 }
-
-
 
 const Reducer = (state, action) => {
     switch (action.type) {
 
-        case "SET_LEVERANCIERS":
-            return { ...state, leveranciers: action.payload.d.results };
+        case "SET_USER":
+            return { ...state, user: action.payload };
 
         default:
             return state;
