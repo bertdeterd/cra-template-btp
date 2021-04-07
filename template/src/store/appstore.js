@@ -1,5 +1,10 @@
 import React, { createContext, useReducer } from 'react'
 
+export const Actions = Object.freeze({
+    SET_USER:   "SET_USER"
+});
+
+
 const initialState = {
     "user": {}
 }
@@ -7,7 +12,7 @@ const initialState = {
 const Reducer = (state, action) => {
     switch (action.type) {
 
-        case "SET_USER":
+        case Actions.SET_USER:
             return { ...state, user: action.payload };
 
         default:

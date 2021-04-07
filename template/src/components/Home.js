@@ -7,15 +7,10 @@ import useStartup from '../api/useStartup'
 const Home = () => {
   const [state, dispatch] = useContext(AppContext)
   const { getUser } = useStartup()
-
-  useEffect(() => {
-    async function _getUser() {
-      const usr = await getUser()
-      dispatch({ type: 'SET_USER', payload: usr })
-    }
-    _getUser()
-
-  }, [dispatch, getUser])
+  
+  useEffect( () => {
+    getUser()
+  }, [])
 
   return (
     <Link href="https://sap.github.io/ui5-webcomponents-react/" target="_blank" design={LinkDesign.Emphasized}>
