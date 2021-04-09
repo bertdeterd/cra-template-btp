@@ -4,6 +4,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
 
+//load from relative path. Does not work otherwise in BTP
 const backendoptions = {
   loadPath: './locales/{{lng}}/{{ns}}.json'
 }
@@ -23,7 +24,7 @@ i18n
   .init({
     backend: backendoptions,
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
